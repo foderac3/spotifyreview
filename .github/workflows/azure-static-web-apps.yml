@@ -1,0 +1,29 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches:
+      - main  # Déclencher sur les pushs vers la branche principale
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  build_and_deploy_job:
+    if: github.event_name != 'pull_request' || github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Build And Deploy
+        env:
+          AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SPOTIFY_REVIEW_FRONTEND }}
+        run: |
+          npm install
+          npm run build
+          npx azure-static-web-apps-deploy
