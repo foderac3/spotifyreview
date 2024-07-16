@@ -1,0 +1,23 @@
+.side-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1; /* Make sure the side nav stays behind other content */
+  }
+  
+  .side-nav-left, .side-nav-right {
+    width: 50px; /* Adjust the width as needed */
+    background-color: #333; /* Adjust the color as needed */
+  }
+  
+  .side-nav-left {
+    left: 0;
+  }
+  
+  .side-nav-right {
+    right: 0;
+  }
+  

@@ -1,0 +1,61 @@
+.recommendation-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .recommendation-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .cover-image2 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .like-button,
+  .next-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .like-button {
+    background-color: #1DB954;
+    color: white;
+  }
+  
+  .like-button:hover {
+    background-color: #1ed760;
+  }
+  
+  .next-button {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .next-button:hover {
+    background-color: #ddd;
+  }
+  
+  .track{
+    width: 400px;
+  }
+  .error_connect{
+    margin-left: 570px;
+    margin-top: 250px;
+    font-size: 20px;
+  }

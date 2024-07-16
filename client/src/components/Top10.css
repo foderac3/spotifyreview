@@ -1,0 +1,77 @@
+.top10-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filter-button {
+    font-size: 1.2em;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .top10-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .top10-table th,
+  .top10-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .top10-table th {
+    background-color: #b2b2b2;
+  }
+  
+  .cover-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; /* Adjust height to match the cover image size */
+  }
+  
+  .cover-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #333;
+  }
+  
+  .top-ranking {
+    text-align: center;
+    width: 10px;
+  }
+  
+  .text-center {
+    text-align: center;
+    width: 150px;
+  }
+  
+
+  .error_connect{
+    margin-left: 570px;
+    margin-top: 250px;
+    font-size: 20px;
+  }
