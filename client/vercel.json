@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://spotify-review-backend.azurewebsites.net/api/$1"
+    }
+  ]
+}
