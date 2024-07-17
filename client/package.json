@@ -1,15 +1,29 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
+  "name": "projet_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "start-backend": "node src/app.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "chart.js": "^4.4.3",
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "express-session": "^1.18.0",
     "fs": "^0.0.1-security",
     "mongoose": "^8.5.1",
@@ -25,12 +39,6 @@
     "redux": "^5.0.1",
     "web-vitals": "^2.1.4",
     "webpack-dev-server": "^5.0.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -50,7 +58,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://spotifyreview.vercel.app/",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
   }
